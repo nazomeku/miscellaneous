@@ -13,11 +13,11 @@ class Person:
         return self.first + " " + self.last
 
 
-def sort_by_first(information):
-    """Return information sorted alphabetically by firstname."""
-    return sorted(information, key=lambda x: (locale.strxfrm(x.first)))
+def sort_by_first(inputdata):
+    """Return objects sorted alphabetically by firstname."""
+    return sorted(inputdata, key=lambda x: (locale.strxfrm(x.first)))
 
 
-def sort_by_last(information):
-    """Return information sorted alphabetically by lastname."""
-    return sorted(information, key=lambda x: (locale.strxfrm(x.last)))
+def sort_by_last(inputdata):
+    """Return objects sorted alphabetically by lastname."""
+    return sorted(inputdata, key=lambda x: (locale.strxfrm(x.last)))
