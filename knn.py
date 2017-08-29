@@ -23,7 +23,7 @@ def main():
         distance[i] = dist(x_train[i], x_test)
     min_index = np.argmin(distance)
 
-    #Print distance to everypoint and conclude color of test point.
+    #Print distance to every point and conclude color of test point.
     print(distance)
     print("test point should be {}".format(y_train[min_index]))
 
